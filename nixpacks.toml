@@ -1,8 +1,0 @@
-[phases.setup]
-nixPkgs = ["python311"]
-
-[phases.install]
-cmds = [
-  "ln -s $(which python3) /usr/local/bin/python || true",
-  "npm ci"
-]

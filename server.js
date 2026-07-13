@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
-const youtubedl = require('yt-dlp-exec');
+const youtubedl = require('youtube-dl-exec');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
