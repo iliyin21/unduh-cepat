@@ -1,10 +1,12 @@
 [phases.setup]
 nixPkgs = [
-  "python3",
+  "python311",
+  "python311Packages.pip",
   "yt-dlp"
 ]
 
 [phases.build]
 cmds = [
-  "npm install"
+  "python3 --version",
+  "yt-dlp --version"
 ]
