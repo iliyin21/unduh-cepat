@@ -71,7 +71,7 @@ app.post('/api/info', async (req, res) => {
   } catch (err) {
     console.error('info error:', err.message);
     res.status(500).json({
-      error: 'Gagal mengambil informasi video. Pastikan link publik, valid, dan platform didukung oleh yt-dlp.'
+      error: 'Gagal mengambil informasi video.'
     });
   }
 });
