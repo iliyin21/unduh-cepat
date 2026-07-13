@@ -1,5 +1,9 @@
 [phases.setup]
 nixPkgs = [
   "python311",
+  "python311Packages.pip",
   "yt-dlp"
 ]
+
+[start]
+cmd = "npm start"
