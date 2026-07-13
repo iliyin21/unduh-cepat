@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Unduh Cepat — Video Downloader Semua Platform</title>
+<meta name="description" content="Unduh video dari berbagai platform seperti YouTube, Instagram, TikTok, Facebook, dan Twitter dengan cepat tanpa aplikasi.">
+
+<meta name="keywords" content="download video, video downloader, download instagram, download tiktok, youtube downloader">
+
+<meta name="author" content="Unduh Cepat">
+<meta property="og:title" content="Unduh Cepat — Video Downloader Semua Platform">
+
+<meta property="og:description" content="Download video dari berbagai platform dengan cepat dan mudah.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:image" content="/images/logo.png">
+<link rel="icon" href="/images/logo.png" type="image/png">
+<link rel="shortcut icon" href="/images/logo.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="bg-mesh"></div>
+
+<header class="topbar">
+<div class="brand">
+
+    <img src="/images/logo.png"
+         alt="Unduh Cepat"
+         class="logo">
+
+    <div class="brand-text">
+
+        <span class="brand-name">
+            Unduh<em>Cepat</em>
+        </span>
+
+        <small>Multi Platform Video Downloader</small>
+
+    </div>
+
+</div>
+
+</div>
+  <nav class="platform-chips">
+    <span class="chip">YouTube</span>
+    <span class="chip">Instagram</span>
+    <span class="chip">TikTok</span>
+    <span class="chip">Twitter/X</span>
+    <span class="chip">Facebook</span>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="eyebrow">Tempel tautan → dapatkan videonya</p>
+    <h1>
+    Unduh Video Tanpa Ribet.
+    <br>
+    Semua Platform, Satu Tempat.
+</h1>
+    <p class="sub">Salin URL video dari platform mana pun, tempel di bawah, pilih kualitasnya, selesai.</p>
+
+    <form id="downloadForm" class="paste-bar" autocomplete="off">
+      <input
+        type="text"
+        id="urlInput"
+        placeholder="Tempel link video di sini… (https://…)"
+        required
+      />
+      <button type="submit" id="submitBtn">
+        <span class="btn-label">Analisis</span>
+        <span class="btn-spinner" hidden></span>
+      </button>
+    </form>
+
+<p id="platformResult" class="platform-result"></p>
+
+<p id="formError" class="form-error" hidden></p>
+  </section>
+
+  <section id="resultSection" class="result-section" hidden>
+    <div class="result-card">
+      <div class="result-thumb">
+        <img id="resThumb" src="" alt="Thumbnail video" />
+        <span id="resPlatform" class="platform-tag"></span>
+      </div>
+      <div class="result-info">
+        <h2 id="resTitle">—</h2>
+        <p id="resMeta" class="result-meta"></p>
+
+        <div class="formats-label">Pilih kualitas</div>
+        <div id="formatList" class="format-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works">
+    <h3>Cara pakai</h3>
+    <div class="steps">
+      <div class="step">
+        <span class="step-index">Salin</span>
+        <p>Buka video di platform pilihanmu, salin URL-nya dari address bar atau tombol share.</p>
+      </div>
+      <div class="step">
+        <span class="step-index">Tempel</span>
+        <p>Tempel URL tadi ke kotak di atas, lalu klik <b>Analisis</b>.</p>
+      </div>
+      <div class="step">
+        <span class="step-index">Unduh</span>
+        <p>Pilih resolusi atau format audio yang kamu mau, videonya langsung terunduh.</p>
+      </div>
+    </div>
+  </section>
+<section class="faq">
+
+  <h3>Pertanyaan yang Sering Ditanyakan</h3>
+
+  <div class="faq-list">
+
+    <details>
+      <summary>
+        Apakah website ini gratis digunakan?
+      </summary>
+      <p>
+        Ya, Unduh Cepat dapat digunakan secara gratis untuk membantu mengunduh video dari berbagai platform.
+      </p>
+    </details>
+
+
+    <details>
+      <summary>
+        Platform apa saja yang didukung?
+      </summary>
+      <p>
+        Saat ini mendukung YouTube, Instagram, TikTok, Twitter/X, dan Facebook.
+      </p>
+    </details>
+
+
+    <details>
+      <summary>
+        Apakah perlu menginstal aplikasi?
+      </summary>
+      <p>
+        Tidak. Cukup buka website, tempel link video, lalu pilih format yang tersedia.
+      </p>
+    </details>
+
+
+    <details>
+      <summary>
+        Apakah semua video bisa diunduh?
+      </summary>
+      <p>
+        Gunakan hanya untuk video milik sendiri atau konten yang memiliki izin untuk diunduh.
+      </p>
+    </details>
+
+  </div>
+
+</section>
+  <section class="disclaimer">
+    <p>
+      Gunakan hanya untuk konten milikmu sendiri, konten domain publik, atau konten yang kamu punya izin untuk
+      diunduh. Hormati hak cipta dan Ketentuan Layanan tiap platform.
+    </p>
+  </section>
+</main>
+
+<footer class="footer">
+
+  <div class="footer-content">
+
+    <div class="footer-brand">
+
+      <img src="/images/logo.png" alt="Unduh Cepat">
+
+      <div>
+        <h4>UnduhCepat</h4>
+        <p>
+          Multi Platform Video Downloader
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <a href="#">Beranda</a>
+      <a href="#">FAQ</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Disclaimer</a>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 UnduhCepat. Semua hak dilindungi.
+    </p>
+
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
