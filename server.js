@@ -70,9 +70,5 @@ app.get("*", (req, res) => {
 // Start Server
 // ======================
 app.listen(PORT, "0.0.0.0", () => {
-
-    console.log(
-        `🚀 Server berjalan pada port ${PORT}`
-    );
-
+    console.log(`🚀 Server berjalan pada port ${PORT}`);
 });
