@@ -11,9 +11,6 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 
-// ======================
-// Middleware
-// ======================
 app.use(cors());
 
 app.use(express.json());
@@ -23,38 +20,23 @@ app.use(express.urlencoded({
 }));
 
 
-// ======================
-// Static Frontend
-// ======================
 app.use(express.static(
     path.join(__dirname, "public")
 ));
 
 
-// ======================
-// Instagram API
-// ======================
 app.use("/api", instagramRoutes);
 
 
-// ======================
-// Health Check
-// ======================
-app.get("/api/health", (req, res) => {
-
+app.get("/api/health", (req,res)=>{
     res.json({
-        success: true,
-        message: "Unduh Cepat API berjalan dengan baik."
+        success:true,
+        message:"Unduh Cepat API berjalan."
     });
-
 });
 
 
-// ======================
-// SPA Landing Page
-// ======================
-app.get("*", (req, res) => {
-
+app.get("/", (req,res)=>{
     res.sendFile(
         path.join(
             __dirname,
@@ -62,13 +44,11 @@ app.get("*", (req, res) => {
             "index.html"
         )
     );
-
 });
 
 
-// ======================
-// Start Server
-// ======================
-app.listen(PORT, "0.0.0.0", () => {
-    console.log(`🚀 Server berjalan pada port ${PORT}`);
+app.listen(PORT,"0.0.0.0",()=>{
+    console.log(
+        `🚀 Server berjalan pada port ${PORT}`
+    );
 });
